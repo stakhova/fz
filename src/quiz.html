@@ -1,0 +1,104 @@
+//= partials/head.html
+
+<div class="wrap">
+    <main>
+        <section class="quiz">
+            <div class="container quiz__container">
+                <div class="quiz__progress">
+                    <div class="quiz__progress-line"></div>
+                </div>
+                <a href="index.html" class="quiz__logo img">
+                    <img src="img/logo-gold.svg" alt="">
+                </a>
+                <a class="quiz__close img" href="index.html">
+                    <img src="img/close-q.svg" alt="">
+                </a>
+                <form class="quiz__form" action="">
+                </form>
+                <div class="loader__wrap">
+                    <div class="loader__text"></div>
+                    <div class="loader center"><span></span></div>
+                </div>
+                <div class="quiz__result modal" >
+                    <div class="modal__auth-title">
+                        <h2>Щоб ми могли відкрити для вас результати тесту, заповніть, будь ласка, форму</h2>
+                    </div>
+                    <form action="http://localhost:3333/profile-care.html" class="modal__form quiz__result-form ">
+                        <div class="quiz__result-test">
+                            <input name="code" type="text"/>
+                        </div>
+                        <div class="modal__form-content">
+                            <label>Ім’я <mark>*</mark> <input name="name" type="text" placeholder="Введіть ім'я" /></label>
+                        </div>
+                        <div class="modal__form-content">
+                            <label>Прізвище <mark>*</mark> <input name="lastname" type="text" placeholder="Ваш email" /></label>
+                        </div>
+                        <div class="modal__form-content">
+                            <label>Email <mark>*</mark> <input name="email" type="email" placeholder="Ваш email" /></label>
+                        </div>
+                        <div class="modal__form-content modal__form-check modal__checkbox">
+                            <div class="form__checkbox">
+                                <input type="checkbox" checked id="check2"/>
+                                <label for="check2">Хочу отримувати розсилку про правильний догляд за шкірою </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="section__button">Отримати результати</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section__modal ">
+            <div class="modal modal__auth" >
+                <div class="modal__wrap">
+                    <!--                    content modal enter-->
+                    <!--                    content modal registration-->
+                    <div class="modal__content modal__reg modal__enter">
+                        <div class="modal__enter-wrap">
+                            <div class="modal__close"></div>
+                            <div class="modal__auth-title">
+                                <h2>Збережіть рекомендації та результати вашого тесту в особистому кабінеті</h2>
+                                <p>Для реєстрації - підтвердьте або відредагуйте свої дані</p>
+                            </div>
+                            <form action="" class="modal__form modal__form-reg">
+                                <div class="modal__form-flex">
+
+                                    <div class="modal__form-content">
+                                        <label>Email <mark>*</mark> <input name="email" type="email" placeholder="Ваш email" /></label>
+                                    </div>
+                                    <div class="modal__form-content">
+                                        <label>Номер телефону<input name="tel" type="text" placeholder="Ваш номер" /></label>
+                                    </div>
+                                    <div class="modal__form-content modal__form-check">
+                                        <div class="form__checkbox">
+                                            <input type="checkbox" checked id="check"/>
+                                            <label for="check">Хочу отримувати розсилку про правильний догляд за шкірою </label>
+                                        </div>
+                                    </div>
+                                    <div class="modal__form-content modal__form-password">
+                                        <label>Пароль<mark>*</mark> <input name="password" type="password" placeholder="Ваш пароль" /></label>
+                                        <div class="modal__form-eye"></div>
+                                    </div>
+                                    <div class="modal__form-content modal__form-password">
+                                        <label>Повторити пароль<mark>*</mark> <input name="password" type="password" placeholder="Ваш пароль" /></label>
+                                        <div class="modal__form-eye"></div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="section__button">Зберегти</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+    </main>
+</div>
+
+//= partials/scripts.html
+
+</body>
+</html>

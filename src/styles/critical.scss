@@ -1,0 +1,116 @@
+/*fonts*/
+@mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
+    $filepath: "/font/" + $file;
+    @font-face {
+        font-family: quote($style-name);
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'),
+        url($filepath + ".woff") format('woff'),
+        url($filepath + ".ttf")  format('truetype'),
+        url($filepath + ".svg#" + $style-name + "") format('svg');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+//  example->    @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
+
+@include font-face("Montserrat", "Montserrat-Regular", 400, normal);
+@include font-face("Montserrat", "Montserrat-Medium", 500, normal);
+@include font-face("Montserrat", "Montserrat-SemiBold", 600, normal);
+@include font-face("Montserrat", "Montserrat-Bold", 700, normal);
+@include font-face("Adventure", "Adventure", 400, normal);
+
+
+:root {
+    --color-white: #fff;
+    --color-black: #333333;
+    --color-pudre: #D08F8A;
+    --color-gold: #BD9436 ;
+    --color-gold-light: #d0b86f;
+    --color-back: #F8F8F8 ;
+    --color-grey: #CECECE ;
+    --color-line: rgba(255, 255, 255, 0.09) ;
+    --blog-filter:rgba(208, 143, 138, 0.6);
+    --color-opacity:rgba(0, 0, 0, 0.4);
+    --color-input-border:rgba(51, 51, 51, 0.24);;
+    --color-border-opacity:rgba(255, 255, 255, 0.24);
+    --color-back-pink: rgba(208, 143, 138, 0.16);
+    --color-gold-back: linear-gradient(149.28deg, #D0B86F 14.34%, #BD9436 84.38%);
+    --gradient-banner: radial-gradient(93.02% 157.6% at 84.76% 20.13%, #958079 0%, #655750 35.96%, #2F2423 100%);
+    --Montserrat: 'Montserrat', sans-serif;
+    --Adventure: 'Adventure', sans-serif;
+}
+
+/* base styles*/
+*,*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+}
+*,body,html {
+    -webkit-text-size-adjust: none;
+    -webkit-appearance: none;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+mark{
+    -webkit-text-fill-color: initial;
+    text-fill-color: transparent;
+    background: none;
+}
+
+.img{
+    &.contain img{
+        object-fit: contain;
+    }
+    & > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+        text-decoration: none;
+    }
+}
+h1{
+    margin: 0;
+}
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    @media only screen and (max-width: 1440px) {
+        font-size: 10px;
+    }
+
+    @media only screen and (max-width: 1366px) {
+        font-size: 9.49px;
+    }
+
+    @media only screen and ( max-width: 1280px){
+        font-size: 8.88px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 7.11px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 5.33px;
+    }
+
+    @media only screen and (max-width: 666px) {
+        font-size: 10px;
+    }
+}

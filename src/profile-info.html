@@ -1,0 +1,121 @@
+//= partials/head.html
+
+<div class="wrap header__white header__underline-pink header__withoutbtb header__after header__after-mob">
+    //= partials/header.html
+
+    <main>
+        <section class="info__header">
+            <div class="info__header-container container">
+                <ul class="profile__menu">
+                    <li><a href="" >Мій догляд</a></li>
+                    <li><a href="">Замовлення</a></li>
+                    <li><a href="" class="profile__menu-active">Профіль</a></li>
+                    <li><a href="">Тест</a></li>
+                    <li><a href="">Підібрати догляд на подарунок</a></li>
+                </ul>
+                <h4>Останній раз ви проходили тест 04.03.2022</h4>
+            </div>
+        </section>
+        <section class="info">
+            <div class="info__container container ">
+                <form action="" class="info__form" >
+                    <h2 class="info__title">Особисті данні</h2>
+
+                    <div class="info__form-flex">
+                        <div class="modal__form-content">
+                            <label>Ім’я<input name="name" type="text" value="Ольга"/></label>
+                        </div>
+                        <div class="modal__form-content">
+                            <label>Прізвище<input name="lastname" type="text" value="Прокопчук" /></label>
+                        </div>
+                    </div>
+                    <h2 class="info__title">Контакти</h2>
+                    <div class="info__form-flex">
+                        <div class="modal__form-content">
+                            <label>Email<input name="email" type="email" value="olhaprokopchuk@gmail.com"/></label>
+                        </div>
+                        <div class="modal__form-content">
+                            <label>Номер телефону<input name="tel" type="text" value="+380 97 949 24 07"/></label>
+                        </div>
+                        <div class="info__change" >
+                            <div class="modal__form-content modal__form-password">
+                                <label>Пароль<input name="password" type="password" value="111111"/></label>
+                                <div class="modal__form-eye"></div>
+                            </div>
+                            <div class="section__button section__button-transparent info__change-password">Замінити пароль</div>
+                        </div>
+
+                    </div>
+                    <h2 class="info__title">Адреса доставки</h2>
+                    <div class="info__form-flex">
+                        <div class="modal__form-content">
+                            <label>Місто<input name="town" type="text" disabled  value="м.Київ" /></label>
+                        </div>
+                        <div class="modal__form-content">
+                            <label>Вулиця<input name="street" type="text" disabled value="Ясинуватий провулок, 13/4"/></label>
+                        </div>
+                        <div class="modal__form-content">
+                            <label>Відділення пошти<input name="post" type="text" disabled value="Нова пошта №15"/></label>
+                        </div>
+                    </div>
+                    <div class="section__button info__edit">Редагувати</div>
+                    <div class="info__form-button">
+                        <div class="section__button section__button-transparent info__cancel">Скасувати</div>
+                        <button type="submit" class="section__button">Зберегти</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+        <section>
+            <div class="modal modal__newpassword" >
+                <div class="modal__wrap">
+                    <div class="modal__content modal__content-small modal__newpassword-create ">
+
+                            <div class="modal__close"></div>
+                            <div class="modal__auth-title">
+                                <h2>Створіть, будь ласка, ваш новий пароль</h2>
+                            </div>
+                            <form action="" class="modal__form modal__form-newpassword">
+                                <div class="modal__form-content modal__form-password">
+                                    <label>Новий Пароль<mark>*</mark> <input name="password" type="password" placeholder="Ваш новий пароль" /></label>
+                                    <div class="modal__form-eye"></div>
+                                </div>
+                                <div class="modal__form-content modal__form-password">
+                                    <label>Повторіть Пароль<mark>*</mark> <input name="password_confirm" type="password" placeholder="Повторіть пароль" /></label>
+                                    <div class="modal__form-eye"></div>
+                                </div>
+                                <button type="submit" class="section__button">Зберегти</button>
+                            </form>
+                    </div>
+                    <div class="modal__content modal__content-small modal__newpassword-success">
+                            <div class="modal__close"></div>
+                            <div class="modal__auth-title">
+                                <h2>Вітаємо, ви успішно змінили пароль!<br>Тепер ви можете зайти в ваш профіль</h2>
+                            </div>
+                            <form action="" class="modal__form modal__form-newpassword-success">
+                                <div class="modal__form-block">
+                                    <div class="modal__form-content ">
+                                        <label>Email <mark>*</mark> <input name="email" type="email" placeholder="Ваш email" /></label>
+                                    </div>
+                                    <div class="modal__form-content modal__form-password">
+                                        <label>Пароль<mark>*</mark> <input name="password" type="password" placeholder="Ваш пароль" /></label>
+                                        <div class="modal__form-eye"></div>
+                                    </div>
+                                </div>
+                                <div class="modal__enter-forget modal__btn-pink">Забули пароль?</div>
+                                <button type="submit" class="section__button">Вхід</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    //= partials/footer.html
+</div>
+
+//= partials/scripts.html
+
+</body>
+</html>

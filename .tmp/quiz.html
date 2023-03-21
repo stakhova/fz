@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- build:css styles/plagins.css -->
+<!--    <link rel="stylesheet" href="styles/fancybox.css">-->
+    <link rel="stylesheet" href="styles/formstyler.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <!-- add you plagin css here -->
+
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/critical.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- add you develop css here -->
+
+    <!-- endbuild -->
+
+</head>
+<body>
+
+<div class="wrap">
+    <main>
+        <section class="quiz">
+            <div class="container quiz__container">
+                <div class="quiz__progress">
+                    <div class="quiz__progress-line"></div>
+                </div>
+                <a href="index.html" class="quiz__logo img">
+                    <img src="img/logo-gold.svg" alt="">
+                </a>
+                <a class="quiz__close img" href="index.html">
+                    <img src="img/close-q.svg" alt="">
+                </a>
+                <form class="quiz__form" action="">
+                </form>
+                <div class="loader__wrap">
+                    <div class="loader__text"></div>
+                    <div class="loader center"><span></span></div>
+                </div>
+                <div class="quiz__result modal" >
+                    <div class="modal__auth-title">
+                        <h2>Щоб ми могли відкрити для вас результати тесту, заповніть, будь ласка, форму</h2>
+                    </div>
+                    <form action="http://localhost:3333/profile-care.html" class="modal__form quiz__result-form ">
+                        <div class="quiz__result-test">
+                            <input name="code" type="text"/>
+                        </div>
+                        <div class="modal__form-content">
+                            <label>Ім’я <mark>*</mark> <input name="name" type="text" placeholder="Введіть ім'я" /></label>
+                        </div>
+                        <div class="modal__form-content">
+                            <label>Прізвище <mark>*</mark> <input name="lastname" type="text" placeholder="Ваш email" /></label>
+                        </div>
+                        <div class="modal__form-content">
+                            <label>Email <mark>*</mark> <input name="email" type="email" placeholder="Ваш email" /></label>
+                        </div>
+                        <div class="modal__form-content modal__form-check modal__checkbox">
+                            <div class="form__checkbox">
+                                <input type="checkbox" checked id="check2"/>
+                                <label for="check2">Хочу отримувати розсилку про правильний догляд за шкірою </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="section__button">Отримати результати</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section__modal ">
+            <div class="modal modal__auth" >
+                <div class="modal__wrap">
+                    <!--                    content modal enter-->
+                    <!--                    content modal registration-->
+                    <div class="modal__content modal__reg modal__enter">
+                        <div class="modal__enter-wrap">
+                            <div class="modal__close"></div>
+                            <div class="modal__auth-title">
+                                <h2>Збережіть рекомендації та результати вашого тесту в особистому кабінеті</h2>
+                                <p>Для реєстрації - підтвердьте або відредагуйте свої дані</p>
+                            </div>
+                            <form action="" class="modal__form modal__form-reg">
+                                <div class="modal__form-flex">
+
+                                    <div class="modal__form-content">
+                                        <label>Email <mark>*</mark> <input name="email" type="email" placeholder="Ваш email" /></label>
+                                    </div>
+                                    <div class="modal__form-content">
+                                        <label>Номер телефону<input name="tel" type="text" placeholder="Ваш номер" /></label>
+                                    </div>
+                                    <div class="modal__form-content modal__form-check">
+                                        <div class="form__checkbox">
+                                            <input type="checkbox" checked id="check"/>
+                                            <label for="check">Хочу отримувати розсилку про правильний догляд за шкірою </label>
+                                        </div>
+                                    </div>
+                                    <div class="modal__form-content modal__form-password">
+                                        <label>Пароль<mark>*</mark> <input name="password" type="password" placeholder="Ваш пароль" /></label>
+                                        <div class="modal__form-eye"></div>
+                                    </div>
+                                    <div class="modal__form-content modal__form-password">
+                                        <label>Повторити пароль<mark>*</mark> <input name="password" type="password" placeholder="Ваш пароль" /></label>
+                                        <div class="modal__form-eye"></div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="section__button">Зберегти</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+    </main>
+</div>
+
+<!-- SCRIPTS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!-- build:js scripts/validate_script.js -->
+<script type="text/javascript" src="scripts/validate_script.js" ></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/plagins.js -->
+<script type="text/javascript" src="scripts/plagins/device.js" ></script>
+<!--<script type="text/javascript" src="scripts/plagins/jquery.fancybox.min.js" ></script>-->
+<script type="text/javascript" src="scripts/plagins/jquery.formstyler.min.js" ></script>
+<script type="text/javascript" src="scripts/plagins/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="scripts/plagins/maskInput.js" ></script>
+<script type="text/javascript" src="scripts/plagins/slick.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- add you plagins js here -->
+
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script type="text/javascript" src="scripts/basic_scripts.js" ></script>
+<script type="text/javascript" src="scripts/develop/index.js" ></script>
+    <!-- add you develop js here -->
+<!-- endbuild -->
+
+<!-- /SCRIPTS -->
+
+</body>
+</html>
